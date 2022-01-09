@@ -1,0 +1,662 @@
+# Include files from /etc/network/interfaces.d:
+source-directory /etc/network/interfaces.d
+
+# Cloud images dynamically generate config fragments for newly
+# attached interfaces. See /etc/udev/rules.d/75-cloud-ifupdown.rules
+# and /etc/network/cloud-ifupdown-helper. Dynamically generated
+# configuration fragments are stored in /run:
+source-directory /run/network/interfaces.d
+
+
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+allow-hotplug eth0
+iface eth0 inet static
+        address 10.0.0.4/24
+        gateway 10.0.0.1
+        # dns-* options are implemented by the resolvconf package, if installed
+        dns-nameservers 127.0.0.1
+
+auto eth0:1
+iface eth0:1 inet static
+        address 10.0.0.5
+        netmask 255.255.255.0
+		
+auto eth0:2
+iface eth0:2 inet static
+        address 10.0.0.6
+        netmask 255.255.255.0
+		
+auto eth0:3
+iface eth0:3 inet static
+        address 10.0.0.7
+        netmask 255.255.255.0
+		
+auto eth0:4
+iface eth0:4 inet static
+        address 10.0.0.8
+        netmask 255.255.255.0
+		
+auto eth0:5
+iface eth0:5 inet static
+        address 10.0.0.9
+        netmask 255.255.255.0
+		
+auto eth0:6
+iface eth0:6 inet static
+        address 10.0.0.10
+        netmask 255.255.255.0
+
+auto eth0:7
+iface eth0:7 inet static
+        address 10.0.0.11
+        netmask 255.255.255.0
+
+auto eth0:8
+iface eth0:8 inet static
+        address 10.0.0.12
+        netmask 255.255.255.0
+
+auto eth0:9
+iface eth0:9 inet static
+        address 10.0.0.13
+        netmask 255.255.255.0
+
+auto eth0:10
+iface eth0:10 inet static
+        address 10.0.0.14
+        netmask 255.255.255.0
+
+auto eth0:11
+iface eth0:11 inet static
+        address 10.0.0.15
+        netmask 255.255.255.0
+
+auto eth0:12
+iface eth0:12 inet static
+        address 10.0.0.16
+        netmask 255.255.255.0
+
+auto eth0:13
+iface eth0:13 inet static
+        address 10.0.0.17
+        netmask 255.255.255.0
+
+auto eth0:14
+iface eth0:14 inet static
+        address 10.0.0.18
+        netmask 255.255.255.0
+
+auto eth0:15
+iface eth0:15 inet static
+        address 10.0.0.19
+        netmask 255.255.255.0
+
+auto eth0:16
+iface eth0:16 inet static
+        address 10.0.0.20
+        netmask 255.255.255.0
+
+auto eth0:17
+iface eth0:17 inet static
+        address 10.0.0.21
+        netmask 255.255.255.0
+
+auto eth0:18
+iface eth0:18 inet static
+        address 10.0.0.22
+        netmask 255.255.255.0
+
+auto eth0:19
+iface eth0:19 inet static
+        address 10.0.0.23
+        netmask 255.255.255.0
+
+auto eth0:20
+iface eth0:20 inet static
+        address 10.0.0.24
+        netmask 255.255.255.0
+
+auto eth0:21
+iface eth0:21 inet static
+        address 10.0.0.25
+        netmask 255.255.255.0
+
+auto eth0:22
+iface eth0:22 inet static
+        address 10.0.0.26
+        netmask 255.255.255.0
+
+auto eth0:23
+iface eth0:23 inet static
+        address 10.0.0.27
+        netmask 255.255.255.0
+
+auto eth0:24
+iface eth0:24 inet static
+        address 10.0.0.28
+        netmask 255.255.255.0
+
+auto eth0:25
+iface eth0:25 inet static
+        address 10.0.0.29
+        netmask 255.255.255.0
+
+auto eth0:26
+iface eth0:26 inet static
+        address 10.0.0.30
+        netmask 255.255.255.0
+
+auto eth0:27
+iface eth0:27 inet static
+        address 10.0.0.31
+        netmask 255.255.255.0
+
+auto eth0:28
+iface eth0:28 inet static
+        address 10.0.0.32
+        netmask 255.255.255.0
+
+auto eth0:29
+iface eth0:29 inet static
+        address 10.0.0.33
+        netmask 255.255.255.0
+
+auto eth0:30
+iface eth0:30 inet static
+        address 10.0.0.34
+        netmask 255.255.255.0
+
+auto eth0:31
+iface eth0:31 inet static
+        address 10.0.0.35
+        netmask 255.255.255.0
+
+auto eth0:32
+iface eth0:32 inet static
+        address 10.0.0.36
+        netmask 255.255.255.0
+
+auto eth0:33
+iface eth0:33 inet static
+        address 10.0.0.37
+        netmask 255.255.255.0
+
+auto eth0:34
+iface eth0:34 inet static
+        address 10.0.0.38
+        netmask 255.255.255.0
+
+auto eth0:35
+iface eth0:35 inet static
+        address 10.0.0.39
+        netmask 255.255.255.0
+
+auto eth0:36
+iface eth0:36 inet static
+        address 10.0.0.40
+        netmask 255.255.255.0
+
+auto eth0:37
+iface eth0:37 inet static
+        address 10.0.0.41
+        netmask 255.255.255.0
+
+auto eth0:38
+iface eth0:38 inet static
+        address 10.0.0.42
+        netmask 255.255.255.0
+
+auto eth0:39
+iface eth0:39 inet static
+        address 10.0.0.43
+        netmask 255.255.255.0
+
+auto eth0:40
+iface eth0:40 inet static
+        address 10.0.0.44
+        netmask 255.255.255.0
+
+auto eth0:41
+iface eth0:41 inet static
+        address 10.0.0.45
+        netmask 255.255.255.0
+
+auto eth0:42
+iface eth0:42 inet static
+        address 10.0.0.46
+        netmask 255.255.255.0
+
+auto eth0:43
+iface eth0:43 inet static
+        address 10.0.0.47
+        netmask 255.255.255.0
+
+auto eth0:44
+iface eth0:44 inet static
+        address 10.0.0.48
+        netmask 255.255.255.0
+
+auto eth0:45
+iface eth0:45 inet static
+        address 10.0.0.49
+        netmask 255.255.255.0
+
+auto eth0:46
+iface eth0:46 inet static
+        address 10.0.0.50
+        netmask 255.255.255.0
+
+auto eth0:47
+iface eth0:47 inet static
+        address 10.0.0.51
+        netmask 255.255.255.0
+
+auto eth0:48
+iface eth0:48 inet static
+        address 10.0.0.52
+        netmask 255.255.255.0
+
+auto eth0:49
+iface eth0:49 inet static
+        address 10.0.0.53
+        netmask 255.255.255.0
+
+auto eth0:50
+iface eth0:50 inet static
+        address 10.0.0.54
+        netmask 255.255.255.0
+
+auto eth0:51
+iface eth0:51 inet static
+        address 10.0.0.55
+        netmask 255.255.255.0
+
+auto eth0:52
+iface eth0:52 inet static
+        address 10.0.0.56
+        netmask 255.255.255.0
+
+auto eth0:53
+iface eth0:53 inet static
+        address 10.0.0.57
+        netmask 255.255.255.0
+
+auto eth0:54
+iface eth0:54 inet static
+        address 10.0.0.58
+        netmask 255.255.255.0
+
+auto eth0:55
+iface eth0:55 inet static
+        address 10.0.0.59
+        netmask 255.255.255.0
+
+auto eth0:56
+iface eth0:56 inet static
+        address 10.0.0.60
+        netmask 255.255.255.0
+
+auto eth0:57
+iface eth0:57 inet static
+        address 10.0.0.61
+        netmask 255.255.255.0
+
+auto eth0:58
+iface eth0:58 inet static
+        address 10.0.0.62
+        netmask 255.255.255.0
+
+auto eth0:59
+iface eth0:59 inet static
+        address 10.0.0.63
+        netmask 255.255.255.0
+
+auto eth0:60
+iface eth0:60 inet static
+        address 10.0.0.64
+        netmask 255.255.255.0
+
+auto eth0:61
+iface eth0:61 inet static
+        address 10.0.0.65
+        netmask 255.255.255.0
+
+auto eth0:62
+iface eth0:62 inet static
+        address 10.0.0.66
+        netmask 255.255.255.0
+
+auto eth0:63
+iface eth0:63 inet static
+        address 10.0.0.67
+        netmask 255.255.255.0
+
+auto eth0:64
+iface eth0:64 inet static
+        address 10.0.0.68
+        netmask 255.255.255.0
+
+auto eth0:65
+iface eth0:65 inet static
+        address 10.0.0.69
+        netmask 255.255.255.0
+
+auto eth0:66
+iface eth0:66 inet static
+        address 10.0.0.70
+        netmask 255.255.255.0
+
+auto eth0:67
+iface eth0:67 inet static
+        address 10.0.0.71
+        netmask 255.255.255.0
+
+auto eth0:68
+iface eth0:68 inet static
+        address 10.0.0.72
+        netmask 255.255.255.0
+
+auto eth0:69
+iface eth0:69 inet static
+        address 10.0.0.73
+        netmask 255.255.255.0
+
+auto eth0:70
+iface eth0:70 inet static
+        address 10.0.0.74
+        netmask 255.255.255.0
+
+auto eth0:71
+iface eth0:71 inet static
+        address 10.0.0.75
+        netmask 255.255.255.0
+
+auto eth0:72
+iface eth0:72 inet static
+        address 10.0.0.76
+        netmask 255.255.255.0
+
+auto eth0:73
+iface eth0:73 inet static
+        address 10.0.0.77
+        netmask 255.255.255.0
+
+auto eth0:74
+iface eth0:74 inet static
+        address 10.0.0.78
+        netmask 255.255.255.0
+
+auto eth0:75
+iface eth0:75 inet static
+        address 10.0.0.79
+        netmask 255.255.255.0
+
+auto eth0:76
+iface eth0:76 inet static
+        address 10.0.0.80
+        netmask 255.255.255.0
+
+auto eth0:77
+iface eth0:77 inet static
+        address 10.0.0.81
+        netmask 255.255.255.0
+
+auto eth0:78
+iface eth0:78 inet static
+        address 10.0.0.82
+        netmask 255.255.255.0
+
+auto eth0:79
+iface eth0:79 inet static
+        address 10.0.0.83
+        netmask 255.255.255.0
+
+auto eth0:80
+iface eth0:80 inet static
+        address 10.0.0.84
+        netmask 255.255.255.0
+
+auto eth0:81
+iface eth0:81 inet static
+        address 10.0.0.85
+        netmask 255.255.255.0
+
+auto eth0:82
+iface eth0:82 inet static
+        address 10.0.0.86
+        netmask 255.255.255.0
+
+auto eth0:83
+iface eth0:83 inet static
+        address 10.0.0.87
+        netmask 255.255.255.0
+
+auto eth0:84
+iface eth0:84 inet static
+        address 10.0.0.88
+        netmask 255.255.255.0
+
+auto eth0:85
+iface eth0:85 inet static
+        address 10.0.0.89
+        netmask 255.255.255.0
+
+auto eth0:86
+iface eth0:86 inet static
+        address 10.0.0.90
+        netmask 255.255.255.0
+
+auto eth0:87
+iface eth0:87 inet static
+        address 10.0.0.91
+        netmask 255.255.255.0
+
+auto eth0:88
+iface eth0:88 inet static
+        address 10.0.0.92
+        netmask 255.255.255.0
+
+auto eth0:89
+iface eth0:89 inet static
+        address 10.0.0.93
+        netmask 255.255.255.0
+
+auto eth0:90
+iface eth0:90 inet static
+        address 10.0.0.94
+        netmask 255.255.255.0
+
+auto eth0:91
+iface eth0:91 inet static
+        address 10.0.0.95
+        netmask 255.255.255.0
+
+auto eth0:92
+iface eth0:92 inet static
+        address 10.0.0.96
+        netmask 255.255.255.0
+
+auto eth0:93
+iface eth0:93 inet static
+        address 10.0.0.97
+        netmask 255.255.255.0
+
+auto eth0:94
+iface eth0:94 inet static
+        address 10.0.0.98
+        netmask 255.255.255.0
+
+auto eth0:95
+iface eth0:95 inet static
+        address 10.0.0.99
+        netmask 255.255.255.0
+
+auto eth0:96
+iface eth0:96 inet static
+        address 10.0.0.100
+        netmask 255.255.255.0
+
+auto eth0:97
+iface eth0:97 inet static
+        address 10.0.0.101
+        netmask 255.255.255.0
+
+auto eth0:98
+iface eth0:98 inet static
+        address 10.0.0.102
+        netmask 255.255.255.0
+
+auto eth0:99
+iface eth0:99 inet static
+        address 10.0.0.103
+        netmask 255.255.255.0
+
+auto eth0:100
+iface eth0:100 inet static
+        address 10.0.0.104
+        netmask 255.255.255.0
+
+auto eth0:101
+iface eth0:101 inet static
+        address 10.0.0.105
+        netmask 255.255.255.0
+
+auto eth0:102
+iface eth0:102 inet static
+        address 10.0.0.106
+        netmask 255.255.255.0
+
+auto eth0:103
+iface eth0:103 inet static
+        address 10.0.0.107
+        netmask 255.255.255.0
+
+auto eth0:104
+iface eth0:104 inet static
+        address 10.0.0.108
+        netmask 255.255.255.0
+
+auto eth0:105
+iface eth0:105 inet static
+        address 10.0.0.109
+        netmask 255.255.255.0
+
+auto eth0:106
+iface eth0:106 inet static
+        address 10.0.0.110
+        netmask 255.255.255.0
+
+auto eth0:107
+iface eth0:107 inet static
+        address 10.0.0.111
+        netmask 255.255.255.0
+
+auto eth0:108
+iface eth0:108 inet static
+        address 10.0.0.112
+        netmask 255.255.255.0
+
+auto eth0:109
+iface eth0:109 inet static
+        address 10.0.0.113
+        netmask 255.255.255.0
+
+auto eth0:110
+iface eth0:110 inet static
+        address 10.0.0.114
+        netmask 255.255.255.0
+
+auto eth0:111
+iface eth0:111 inet static
+        address 10.0.0.115
+        netmask 255.255.255.0
+
+auto eth0:112
+iface eth0:112 inet static
+        address 10.0.0.116
+        netmask 255.255.255.0
+
+auto eth0:113
+iface eth0:113 inet static
+        address 10.0.0.117
+        netmask 255.255.255.0
+
+auto eth0:114
+iface eth0:114 inet static
+        address 10.0.0.118
+        netmask 255.255.255.0
+
+auto eth0:115
+iface eth0:115 inet static
+        address 10.0.0.119
+        netmask 255.255.255.0
+
+auto eth0:116
+iface eth0:116 inet static
+        address 10.0.0.120
+        netmask 255.255.255.0
+
+auto eth0:117
+iface eth0:117 inet static
+        address 10.0.0.121
+        netmask 255.255.255.0
+
+auto eth0:118
+iface eth0:118 inet static
+        address 10.0.0.122
+        netmask 255.255.255.0
+
+auto eth0:119
+iface eth0:119 inet static
+        address 10.0.0.123
+        netmask 255.255.255.0
+
+auto eth0:120
+iface eth0:120 inet static
+        address 10.0.0.124
+        netmask 255.255.255.0
+
+auto eth0:121
+iface eth0:121 inet static
+        address 10.0.0.125
+        netmask 255.255.255.0
+
+auto eth0:122
+iface eth0:122 inet static
+        address 10.0.0.126
+        netmask 255.255.255.0
+
+auto eth0:123
+iface eth0:123 inet static
+        address 10.0.0.127
+        netmask 255.255.255.0
+
+auto eth0:124
+iface eth0:124 inet static
+        address 10.0.0.128
+        netmask 255.255.255.0
+
+auto eth0:125
+iface eth0:125 inet static
+        address 10.0.0.129
+        netmask 255.255.255.0
+
+auto eth0:126
+iface eth0:126 inet static
+        address 10.0.0.130
+        netmask 255.255.255.0
+
+auto eth0:127
+iface eth0:127 inet static
+        address 10.0.0.131
+        netmask 255.255.255.0
+
+auto eth0:128
+iface eth0:128 inet static
+        address 10.0.0.132
+        netmask 255.255.255.0
+
+
